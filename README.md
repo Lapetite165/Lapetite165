@@ -16,7 +16,7 @@ I'm working on
 Contact
 =======
 📫 You can reach me on 
-<https://www.linkedin.com/in/yohan-n-49240a199?utm_source=share&utm_campaign=share_via&utm_content=profile>
+<https://www.linkedin.com/in/yohan-n-49240a199>
 <!--github.com>
 stackoverflow.com
 google
