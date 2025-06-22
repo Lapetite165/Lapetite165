@@ -5,12 +5,12 @@ My real name is Yohan Nicolay and I started to code some basic HTML/CSS/JS befor
 
 My interest
 ===========
-👀 I’m interested in Web Design, App Design and Cybersecurity.
+👀 I’m interested in Web Design, App Design and Cybersecurity from W3C
 
 My work
 =======
 🌱 I’m currently learning React Native, Nodejs, to developp app and help maintain websites.
-I'm working on 
+I'm working on project about <LaTeX2ε> and <WaybackMachine|>.
 💞️ I’m looking to collaborate on Wikipedia, Open Source softwares and apps.
 
 Contact
