@@ -2,6 +2,8 @@ Introduction
 =============
 👋 Hi, I’m @L165
 My real name is Yohan Nicolay and I started to code some basic HTML/CSS/JS before knowing GitHub.
+I am an engineering student at ENSAM looking for an apprenticeship about developping solutions for eduction.
+After learning, I teach to learn !
 
 My interest
 ===========
