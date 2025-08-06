@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang=fr>
+	<head>
+		<!-- Encodage -->
+		<meta charset="utf-8">
+		<!-- Titre -->
+		<title>Yu-Gi-Oh! Database for fun</title>
+		<!-- Styles -->
+		<link rel="preload" href="styles/style.css" as="style" />
+		<link src="styles/style.css" rel="sylesheet">
+		<!-- Scripts -->
+		<link src="scripts/script.js" rel="script">
+		<!-- iFrames ->
+		<link src="https://www.db.yugioh-card.com/yugiohdb/?request_locale=fr" rel="preload" as="document"> -->
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul><!--
+		   			<li><a href="index.html"><figure><img src="assets/logo.png" title="Logo Yu-Gi-Oh!" alt="Original copyrighted logo from the serie of Kazuki Takahashi"></figure></a></li>-->
+		   			<li><a href="#card">Formulaire</a></li>
+					<li><a href="#nameo">Carte</a></li>
+				</ul>
+		  	</nav><!--
+			<h1><figure><img src="assets/logo.png" title="Logo Yu-Gi-Oh!" alt="Original copyrighted logo from the serie of Kazuki Takahashi"></figure> Database for fun</h1>-->
+		</header>
+		<section><!--
+			<iframe title="Yu-Gi-Oh! DB Officielle" src="https://www.db.yugioh-card.com/yugiohdb/?request_locale=fr" width="100%" sandbox><p><a href="https://www.db.yugioh-card.com/yugiohdb/?request_locale=fr">Lien de repli pour les navigateurs ne prenant pas en charge iframe</a></p></iframe>-->
+		</section>
+		<main>
+			<form id="card" method="POST" action="">
+				<input type="reset" value="Reset the values of the form">
+				<fieldset>
+					<legend>Haut</legend>
+					<label for="name">Nom de la carte</label>
+					<input id="name" name="NAME" type="text" placeholder="Name" required>
+					<br>
+					<label for="attr">Attribut</label>
+					<select id="attr" name="ATTR" required>
+						<optgroup label="Monstre">
+							<option value="f">Feu</option>
+							<option value="e">Eau</option>
+							<option value="v">Vent</option>
+							<option value="tr">Terre</option>
+							<option value="l">Lumière</option>
+							<option value="tn">Ténèbres</option>
+							<option value="d">Divin</option>
+						</optgroup>
+						<optgroup label="Magie & Piège">
+							<option value="m">Magie</option>
+							<option value="p">Piège</option>
+						</optgroup>
+						<optgroup label="Na">
+							<option value="c" selected><!--<input type=text value="-->Custom<!--">--></option>
+						</optgroup>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Type</legend>
+					<label for="typ">Type</label>
+					<select id="typ" name="TYP" required>
+						<optgroup label="Monstres">
+							<option value="nv" selected>Monstre</option>
+							<option value="nve">Monstre à Effet</option>
+							<option value="fs">Fusion</option>
+							<option value="ri">Rituel</option>
+							<option value="sy">Synchro</option>
+							<option value="rg">Xyz</option>
+							<option value="ln">Link</option>
+						</optgroup>
+						<optgroup label="Magie" id="mg" disabled>
+							<option value="norm">Normale</option>
+							<option value="cont">Continue</option>
+							<option value="ter">Terrain</option>
+							<option value="eq">Équipement</option>
+							<option value="rtl">Rituelle</option>
+							<option value="jer">Jeu-rapide</option>
+						</optgroup>
+						<optgroup label="Piège" id="pg" disabled>
+							<option value="norm">Normal</option>
+							<option value="cont">Continu</option>
+							<option value="ctr">Contre</option>
+						</optgroup>
+					</select>
+					<label for="pen">Pendule</label>
+					<input id="pen" name="PEN" type="checkbox">
+					<br>
+					<label for="nv">Niveau</label>
+					<input id="nv" name="NV" type="range" min="0" max="12">
+					<br>
+					<label for="rg">Rang</label>
+					<input id="rg" name="RG" type="range" min="0" max="12">
+					<br>
+					<label for="mg1">Magie</label>
+					<select id="mg1" name="MG">
+						<option value="norm" selected>Normale</option>
+						<option value="cont">Continue</option>
+						<option value="ter">Terrain</option>
+						<option value="eq">Équipement</option>
+						<option value="rtl">Rituelle</option>
+						<option value="jer">Jeu-rapide</option>
+					</select>
+					<label for="pg1">Piège</label>
+					<select id="pg1" name="PG">
+						<option value="norm" selected>Normal</option>
+						<option value="cont">Continu</option>
+						<option value="ctr">Contre</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Image</legend>
+					<label for="ln">Link</label>
+					<input id="ln" name="LN" type="range" min="0" max="6">
+					<br>
+					<label for="img">Image</label>
+					<input id="img" name="IMG" type="file" required>
+				</fieldset>
+				<fieldset>
+					<legend>Informations propriétaire</legend>
+					<label for="ed">Édition</label>
+					<select id="ed" name="ED" required>
+						<option value="ul" selected>Unlimited (rien)</option>
+						<option value="pe">1ère Édition</option>
+						<option value="el">ÉDITION LIMITÉE</option>
+					</select>
+					<br>
+					<label for="xt">Extension</label>
+					<input id="xt" name="XT" type="text" maxlength="4" size="4">
+					<label for="v7">Version</label>
+					<select id="v7" name="V7">
+						<optgroup label="Amérique">
+							<option value="an">EN (anglaise)</option>
+							<option value="ca">C (canadienne)</option>
+						</optgroup>
+						<optgroup label="Eurasie">
+							<option value="it">IT (italienne)</option>
+							<option value="fr" selected>FR ou F (française)</option>
+							<option value="es">SP (espagnole)</option>
+							<option value="pt">PT (portuguaise)</option>
+							<option value="jp">JP (japonaise)</option>
+							<option value="ko">KO (koréenne)</option>
+							<option value="ae">AE (anglais asiatique)</option>
+						</optgroup>
+						<optgroup>
+							<option value="na">Non affichée</option>
+						</optgroup>
+					</select>
+					<label for="num">Numéro de carte</label>
+					<input id="num" type="text" maxlength="3" size="3">
+				</fieldset>
+				<fieldset>
+					<legend>Description</legend>
+					<label for="des">Description</label>
+					<select id="des" name="DES" multiple required>
+						<optgroup>
+							<option value="n" selected>Normal</option>
+							<option value="ef">Effet</option>
+							<option value="pd">Pendule</option>
+							<option value="ef">Magie</option>
+							<option value="ef">Piège</option>
+						</optgroup>
+						<optgroup>
+							<option value="d">Démon</option>
+							<option value="z">Zombie</option>
+							<option value="sp">Spirit</option>
+							<option value="a">Aqua</option>
+							<option value="sm">Serpent de Mer</option>
+							<option value="ps">Poisson</option>
+							<option value="b">Bête</option>
+							<option value="ba">Bête Ailée</option>
+							<option value="bg">Bête-Guerrier</option>
+							<option value="c">Cyberse</option>
+							<option value="i">Illusion</option>
+							<option value="u">Union</option>
+							<option value="py">Pyro</option>
+							<option value="mc">Machine</option>
+							<option value="pl">Plante</option>
+							<option value="r">Rocher</option>
+						</optgroup>
+					</select>
+					<br>
+					<label for="ecg">Échelle Pendule Bleue</label>
+					<input id="ecg" name="ECG" type="range" min="0" max="15">
+					<label for="desp">Description Pendule</label>
+					<textarea id="desp" name="DESP"></textarea>
+					<label for="ecd">Échelle Pendule Rouge</label>
+					<input id="ecd" name="ECD" type="range" min="0" max="15">
+					<br>
+					<label for="des1m">Description</label>
+					<input id="des1m" type="text" name="DES1M">
+					<br>
+					<label for="des1">Description</label>
+					<textarea id="des1" name="DES1" required></textarea>
+					<br>
+					<label for="atk">ATK</label>
+					<input id="atk" name="ATK" type="text" min="0" max="8" size="8" required>
+					<label for="def">DEF</label>
+					<input id="def" name="DEF" type="text" min="0" max="8" size="8" required>
+				</fieldset>
+				<fieldset>
+					<legend>Informations connexes</legend>
+					<label for="nimg">Numéro d'image</label>
+					<input id="nimg" name="NIMG" type="range" min="0" max="99999999">
+					<input id="nimgi" type="number" min="0" max="99999999">
+					<label for="cp">Copyright</label>
+					<select id="cp" name="CP" required>
+						<option value="kt" for="cp">©️1996 KAZUKI TAKAHASHI</option>
+						<option value="sk" for="cp">©️2020 Studio Dice/SHUEISHA, TV TOKYO, KONAMI</option>
+						<option value="no" for="cp">Ø</option>
+					</select>
+					<br>
+					<label for="rt">Rareté</option>
+					<select id="rt" name="RT" multiple required>
+						<option value="gr">Ghost rare</option>
+						<option value="ult">Ultimate rare</option>
+						<option value="qcr">Quart de Siècle</option>
+						<option value="sct">Secret rare</option>
+						<option value="str">Starlight rare</option>
+						<option value="ur">Ultra rare</option>
+						<option value="stf">Starfoil rare</option>
+						<option value="sr">Super rare</option>
+						<option value="r">Rare</option>
+						<option value="c" selected>Commune</option>
+					</select>
+					<label for="car">Carré</label>
+					<select id="car" name="CAR">
+						<option value="or">Or</option>
+						<option value="argent">Argent</option>
+						<option value="ot">Autre</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Informations complémentaires</legend>
+					<label for="ts">État</label>
+					<select id="ts" name="TS" required>
+						<option value="s">🤩</option>
+						<option value="tb">😄</option>
+						<option value="b">😃</option>
+						<option value="ab">😀</option>
+						<option value="a">🙂</option>
+						<option value="0" selected>😐</option>
+						<option value="p">😕</option>
+						<option value="am">🙁</option>
+						<option value="m">☹️</option>
+						<option value="tm">😠</option>
+						<option value="i">🤮</option>
+					</select>
+					<label for="rel">Réalisation</label>
+					<select id="rel" name="REL" required>
+						<option value="o">Officielle</option>
+						<option value="r">Réaliste</option>
+						<option value="na" selected>Non évaluée</option>
+					</select>
+					<br>
+					<label for="tsd">Description de l'État</label>
+					<textarea id="tsd" name="TSD"></textarea>
+				</fieldset>
+				<input type="submit" value="Envoyer">
+			</form>
+			<!--<progress max="100" value="2"></progres>-->
+			<div class="card" style="height: 136px">
+				<a href="#rt">
+					<!--<img src="/assets/carte-annote.png" title="Carte annotée" alt="Carte clickable">-->
+					<div>
+						<a href="#name"><output form="card" id="nameo" for="name"></output></a>
+						<a href="#attr"><output form="card" id="attro" for="attr"></output></a>
+					</div>
+					<a href="typ">
+						<div>
+							<a href="#nv"><output form="card" id="nvo" for="nv"></output></a>
+							<a href="#rg"><output form="card" id="rgo" for="rg"></output></a>
+							<a href="#mg"><output form="card" id="mgo" for="mg"></output></a>
+							<a href="#pg"><output form="card" id="pgo" for="pg"></output></a>
+						</div>
+					</a>
+					<a href="#ln">
+						<output form="card" id="lno" for="ln"></output>
+						<a href="#img"><div><output form="card" id="imgo" for="img"></output></div></a>
+					</a>
+					<div>
+						<a href="#ed"><output form="card" id="edo" for="ed"></output></a>
+						<a href="#xt"><output form="card" id="xto" for="xt"></output></a>
+						<a href="#v7"><output form="card" id="v70" for="v7"></output></a>
+						<a href="#num"><output form="card" id="numo" for="num"></output></a>
+					</div>
+					<a href="#des">
+						<div>
+							<a href="#ecg"><output form="card" id="ecgo" for="ecg"></output></a>
+							<a href="#desp"><output form="card" id="despo" for="desp"></output></a>
+							<a href="#ecd"><output form="card" id="ecdo" for="ecd"></output></a>
+							<div>
+								<a href="#des1m"><output form="card" id="des1mo" for="des"></output></a>
+								<a href="#des1"><div><output form="card" id="des1o" for="des1"></output></div></a><br>
+								<span>
+									<a href="#xt"><output form="card" id="xto" for="xt"></output></a>
+									<a href="#v7"><output form="card" id="v70" for="v7"></output></a>
+									<a href="#num"><output form="card" id="numo" for="num"></output></a>
+									<a href="#ed"><output form="card" id="edo" for="ed"></output></a>
+									<a href="#atk"><output form="card" id="atko" for="atk"></output></a>
+									<a href="#def"><output form="card" id="defo" for="def"></output></a>
+								</div>
+							</div>
+						</a>
+					<div>
+						<div></div>
+						<a href="#nimg"><output form="card" id="nimgo" for="nimg"></output></a>
+						<a href="#cp"><output form="card" id="cpo" for="cp"></output></a>
+						<a href="#car"><output form="card" id="caro" for="car"></output></a>
+					</div>
+					<a href="#ts"><output form="card" id="tso" for="ts"></output></a>
+				</a>
+			</div>
+			<map>
+				<area></area>
+			</map>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
