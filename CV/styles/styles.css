@@ -1,0 +1,105 @@
+body{
+	font-family: Arial Narrow;
+}
+header{
+	color: white;
+	background-color: #572801;
+	display: flex;
+	font-size: 20px;
+} 
+header span{
+	flex: 1;
+}
+.contacts{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+.contact{
+	display: flex;
+	align-items: center;
+}
+.contact img{
+	height: 80px;
+	width: 80px;
+}
+header a, header a:hover{
+	color: white;
+	text-decoration: none;
+}
+address{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+address figure{
+	display: flex;
+	align-items: flex-start;
+}
+figcaption{
+	padding-left: 10px;
+}
+.profil{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.profil hgroup{
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+.profil img{
+	display: flex;
+	margin: 5% 2% 5% 3%;
+	padding-left: 5%;
+	border-left: 3px solid #5C983A;
+}
+main{
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+}
+h3{
+	text-align: center;
+}
+main hgroup{
+	display: flex;
+}
+hgroup{
+	display: flex;
+	flex-direction: column;
+}
+h2{
+	color: white;
+	background-color: #5C983A;
+	text-align: center;
+	display: block;
+}
+.education div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center	;
+}
+.articles{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+article{
+	display: flex;
+	justify-content: stretch;
+}
+article p{
+	padding-left: 1px;
+	margin: auto;
+}
+.education div figure{
+	display: flex;
+	flex: 1;
+}
+.item{
+	text-decoration: underline;
+}
