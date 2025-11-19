@@ -1,11 +1,13 @@
 body{
 	font-family: Arial Narrow;
+	font-size: 24px;
 }
 header{
 	color: white;
 	background-color: #572801;
 	display: flex;
-	font-size: 20px;
+	font-size: 48px;
+	justify-content: space-between;
 } 
 header span{
 	flex: 1;
@@ -57,17 +59,16 @@ figcaption{
 	border-left: 3px solid #5C983A;
 }
 main{
-	font-size: 18px;
 	display: flex;
 	flex-direction: column;
 }
 h3{
 	text-align: center;
 }
-main hgroup{
+main section{
 	display: flex;
 }
-hgroup{
+section{
 	display: flex;
 	flex-direction: column;
 }
@@ -88,9 +89,9 @@ h2{
 	flex-direction: column;
 	flex: 1;
 }
-article{
-	display: flex;
-	justify-content: stretch;
+td .image{
+	/*display: flex;
+	justify-content: center;*/
 }
 article p{
 	padding-left: 1px;
@@ -102,4 +103,7 @@ article p{
 }
 .item{
 	text-decoration: underline;
+}
+footer p {
+	text-align: center;
 }
